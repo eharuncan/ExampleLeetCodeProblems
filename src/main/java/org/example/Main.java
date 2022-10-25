@@ -6,16 +6,32 @@ import java.util.Objects;
 
 public class Main {
 
-    static int[] nums = {1,1,1,2,2,3};
-
     public static void main(String[] args) {
-        leetCode1Driver();
+        problem1Driver();
         System.out.println("");
-        leetCode2Driver();
+        problem2Driver();
+        System.out.println("");
+        problem3Driver();
     }
 
-    public static void leetCode1Driver (){
-        int[] expectedNums =  {1,1,2,2,3};
+    private static void validate(Object object1, Object object2) {
+        System.out.println(object1);
+        System.out.println(object2);
+
+        if (Objects.equals(object1, object2)) {
+            System.out.println("Başarılı");
+        } else {
+            System.out.println("Başarısız");
+        }
+    }
+
+    static int[] nums = {1, 1, 1, 2, 2, 3};
+    private static void problem1Driver() {
+
+        // 80. Remove Duplicates from Sorted Array II
+        // https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
+
+        int[] expectedNums = {1, 1, 2, 2, 3};
 
         int k = removeDuplicates(nums); // Calls your implementation
 
@@ -28,27 +44,41 @@ public class Main {
         validate(resultList.toString(), Arrays.toString(expectedNums));
     }
 
-    public static void leetCode2Driver (){
-        String string = "PAYPALISHIRING";
-        int numRows = 4;
-        String expectedString = "PINALSIGYAHRPI";
-        String resultString = convert(string, numRows); // Calls your implementation
+    private static int removeDuplicates(int[] nums) {
+        int bulunma_sayisi = 0;
+        int yazilacak_index = 0;
 
-        validate(expectedString, resultString);
-    }
-
-    public static void validate(Object object1, Object object2){
-        System.out.println(object1);
-        System.out.println(object2);
-
-        if (Objects.equals(object1, object2)){
-            System.out.println("Başarılı");
-        }else {
-            System.out.println("Başarısız");
+        if (nums.length > 2) {
+            for (int i = 1; i < nums.length; i++) {
+                if (nums[yazilacak_index] == nums[i]) {
+                    bulunma_sayisi++;
+                    if (bulunma_sayisi < 2) yazilacak_index++;
+                } else {
+                    yazilacak_index++;
+                    bulunma_sayisi = 0;
+                }
+                nums[yazilacak_index] = nums[i];
+            }
+            return yazilacak_index + 1;
+        } else {
+            return nums.length;
         }
     }
 
-    public static String convert(String s, int numRows) {
+    private static void problem2Driver() {
+
+        // 6. Zigzag Conversation
+        // https://leetcode.com/problems/zigzag-conversion/
+
+        String input = "PAYPALISHIRING";
+        int numRows = 4;
+        String expected = "PINALSIGYAHRPI";
+        String output = convert(input, numRows); // Calls your implementation
+
+        validate(expected, output);
+    }
+
+    private static String convert(String s, int numRows) {
         if (s == null || s.isEmpty() || numRows <= 0) return ""; // Base conditions
         if (numRows == 1) return s;
 
@@ -65,26 +95,26 @@ public class Main {
         return result.toString();
     }
 
-    public static int removeDuplicates(int[] nums) {
-        int bulunma_sayisi = 0;
-        int yazilacak_index = 0;
+    private static void problem3Driver() {
 
-        if (nums.length > 2) {
-            for (int i = 1; i < nums.length; i++) {
-                if (nums[yazilacak_index] == nums[i]) {
-                    bulunma_sayisi++;
-                    if (bulunma_sayisi < 2) yazilacak_index++;
-                } else {
-                    yazilacak_index++;
-                    bulunma_sayisi = 0;
-                }
-                nums[yazilacak_index] = nums[i];
-            }
-            return yazilacak_index+1;
-        } else {
-            return nums.length;
-        }
+        // 143. Reorder List
+        // https://leetcode.com/problems/reorder-list/
+
+        int[] input = {1,2,3,4};
+        int[] expected = {1,4,2,3};
+
+        int[] output = reorderList(input);
+
+        validate(expected, output);
     }
+
+
+    public static int[] reorderList (int[] input ) {
+
+
+    }
+
+
 }
 
 
