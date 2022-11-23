@@ -7,7 +7,7 @@ public class Problem204 extends Problem implements IDrivable {
 
     public Problem204() {
         this.setName("204. Count Primes");
-        this.setUrl("https://leetcode.com/problems/count-primes/description/");
+        this.setUrl("https://leetcode.com/problems/count-primes/");
     }
 
     @Override

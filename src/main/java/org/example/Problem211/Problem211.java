@@ -7,7 +7,7 @@ public class Problem211 extends Problem implements IDrivable {
 
     public Problem211() {
         this.setName("211. Design Add and Search Words Data Structure");
-        this.setUrl("https://leetcode.com/problems/design-add-and-search-words-data-structure/description/");
+        this.setUrl("https://leetcode.com/problems/design-add-and-search-words-data-structure/");
     }
 
     @Override
