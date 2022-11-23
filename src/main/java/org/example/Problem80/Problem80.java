@@ -5,7 +5,6 @@ import org.example.Problem;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Objects;
 
 public class Problem80 extends Problem implements IDrivable {
 

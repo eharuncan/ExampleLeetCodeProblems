@@ -3,8 +3,6 @@ package org.example.Problem6;
 import org.example.IDrivable;
 import org.example.Problem;
 
-import java.util.Objects;
-
 public class Problem6 extends Problem implements IDrivable {
 
     public Problem6() {

@@ -1,7 +1,6 @@
 package org.example;
 
 import org.example.Problem6.Problem6;
-import org.example.Problem204.Problem204;
 
 public class Main {
 
