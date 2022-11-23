@@ -1,16 +1,20 @@
-package org.example.problem80;
+package org.example.Problem80;
+
+import org.example.Problem;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Objects;
 
-public class problem80 {
+public class Problem80 extends Problem {
 
-    static int[] nums = {1, 1, 1, 2, 2, 3};
-    public static void driver() {
+    public Problem80() {
+        this.setName("80. Remove Duplicates from Sorted Array II");
+        this.setUrl("https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/");
+    }
 
-        // 80. Remove Duplicates from Sorted Array II
-        // https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
+    int[] nums = {1, 1, 1, 2, 2, 3};
+    public void driver() {
 
         int[] expectedNums = {1, 1, 2, 2, 3};
 
@@ -25,7 +29,7 @@ public class problem80 {
         validate(resultList.toString(), Arrays.toString(expectedNums));
     }
 
-    private static int removeDuplicates(int[] nums) {
+    private int removeDuplicates(int[] nums) {
         int bulunma_sayisi = 0;
         int yazilacak_index = 0;
 
@@ -46,7 +50,7 @@ public class problem80 {
         }
     }
 
-    private static void validate(Object object1, Object object2) {
+    private void validate(Object object1, Object object2) {
         System.out.println(object1);
         System.out.println(object2);
 

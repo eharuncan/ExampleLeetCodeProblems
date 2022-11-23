@@ -1,16 +1,20 @@
-package org.example.problem204;
+package org.example.Problem204;
 
-public class problem204 {
+import org.example.Problem;
 
-    public static void driver (){
-        // 204. Count Primes
-        // https://leetcode.com/problems/count-primes/description/
+public class Problem204 extends Problem {
 
+    public Problem204() {
+        this.setName("204. Count Primes");
+        this.setUrl("https://leetcode.com/problems/count-primes/description/");
+    }
+
+    public void driver (){
         int n = 100000000;
         System.out.println("Count Primes for n=" + n + " " + countPrimes(n));
     }
 
-    public static int countPrimes(int n) {
+    public int countPrimes(int n) {
         int j = 0;
         // Create a boolean array "prime[0..n]" and
         // initialize all entries it as true. A value in

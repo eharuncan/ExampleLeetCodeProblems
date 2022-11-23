@@ -1,13 +1,15 @@
-package org.example.problem143;
+package org.example.Problem143;
 
-import java.util.Objects;
+import org.example.Problem;
 
-public class problem143 {
+public class Problem143 extends Problem {
 
-//    public static void driver() {
-//
-//        // 143. Reorder List
-//        // https://leetcode.com/problems/reorder-list/
+    public Problem143() {
+        this.setName("143. Reorder List");
+        this.setUrl("https://leetcode.com/problems/reorder-list/");
+    }
+
+//    public void driver() {
 //
 //        int[] input = {1,2,3,4};
 //        int[] expected = {1,4,2,3};
@@ -18,12 +20,12 @@ public class problem143 {
 //    }
 //
 //
-//    public static int[] reorderList (int[] input ) {
+//    public int[] reorderList (int[] input ) {
 //
 //
 //    }
 //
-//    private static void validate(Object object1, Object object2) {
+//    private void validate(Object object1, Object object2) {
 //        System.out.println(object1);
 //        System.out.println(object2);
 //

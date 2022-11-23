@@ -1,13 +1,17 @@
-package org.example.problem6;
+package org.example.Problem6;
+
+import org.example.Problem;
 
 import java.util.Objects;
 
-public class problem6 {
+public class Problem6 extends Problem {
 
-    public static void driver() {
+    public Problem6() {
+        this.setName("6. Zigzag Conversation");
+        this.setUrl("https://leetcode.com/problems/zigzag-conversion/");
+    }
 
-        // 6. Zigzag Conversation
-        // https://leetcode.com/problems/zigzag-conversion/
+    public void driver() {
 
         String input = "PAYPALISHIRING";
         int numRows = 4;
@@ -17,7 +21,7 @@ public class problem6 {
         validate(expected, output);
     }
 
-    private static String convert(String s, int numRows) {
+    private String convert(String s, int numRows) {
         if (s == null || s.isEmpty() || numRows <= 0) return ""; // Base conditions
         if (numRows == 1) return s;
 
@@ -34,7 +38,7 @@ public class problem6 {
         return result.toString();
     }
 
-    private static void validate(Object object1, Object object2) {
+    private void validate(Object object1, Object object2) {
         System.out.println(object1);
         System.out.println(object2);
 
