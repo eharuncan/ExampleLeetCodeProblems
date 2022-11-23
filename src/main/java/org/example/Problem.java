@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Objects;
+
 public class Problem {
 
     private String name;
@@ -22,6 +24,17 @@ public class Problem {
 
     public void setUrl(String url) {
         this.url = url;
+    }
+
+    public void validator(Object object1, Object object2) {
+        System.out.println(object1);
+        System.out.println(object2);
+
+        if (Objects.equals(object1, object2)) {
+            System.out.println("Doğrulama başarılı");
+        } else {
+            System.out.println("Doğrulama başarısız");
+        }
     }
 
 }

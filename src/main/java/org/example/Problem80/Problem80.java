@@ -1,12 +1,13 @@
 package org.example.Problem80;
 
+import org.example.IDrivable;
 import org.example.Problem;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Objects;
 
-public class Problem80 extends Problem {
+public class Problem80 extends Problem implements IDrivable {
 
     public Problem80() {
         this.setName("80. Remove Duplicates from Sorted Array II");
@@ -14,6 +15,8 @@ public class Problem80 extends Problem {
     }
 
     int[] nums = {1, 1, 1, 2, 2, 3};
+
+    @Override
     public void driver() {
 
         int[] expectedNums = {1, 1, 2, 2, 3};
@@ -26,7 +29,7 @@ public class Problem80 extends Problem {
             resultList.add(nums[i]);
         }
 
-        validate(resultList.toString(), Arrays.toString(expectedNums));
+        validator(resultList.toString(), Arrays.toString(expectedNums));
     }
 
     private int removeDuplicates(int[] nums) {
@@ -50,14 +53,4 @@ public class Problem80 extends Problem {
         }
     }
 
-    private void validate(Object object1, Object object2) {
-        System.out.println(object1);
-        System.out.println(object2);
-
-        if (Objects.equals(object1, object2)) {
-            System.out.println("Başarılı");
-        } else {
-            System.out.println("Başarısız");
-        }
-    }
 }

@@ -1,14 +1,16 @@
 package org.example.Problem204;
 
+import org.example.IDrivable;
 import org.example.Problem;
 
-public class Problem204 extends Problem {
+public class Problem204 extends Problem implements IDrivable {
 
     public Problem204() {
         this.setName("204. Count Primes");
         this.setUrl("https://leetcode.com/problems/count-primes/description/");
     }
 
+    @Override
     public void driver (){
         int n = 100000000;
         System.out.println("Count Primes for n=" + n + " " + countPrimes(n));
@@ -44,4 +46,5 @@ public class Problem204 extends Problem {
         }
         return j;
     }
+
 }

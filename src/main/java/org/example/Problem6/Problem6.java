@@ -1,16 +1,18 @@
 package org.example.Problem6;
 
+import org.example.IDrivable;
 import org.example.Problem;
 
 import java.util.Objects;
 
-public class Problem6 extends Problem {
+public class Problem6 extends Problem implements IDrivable {
 
     public Problem6() {
         this.setName("6. Zigzag Conversation");
         this.setUrl("https://leetcode.com/problems/zigzag-conversion/");
     }
 
+    @Override
     public void driver() {
 
         String input = "PAYPALISHIRING";
@@ -18,7 +20,7 @@ public class Problem6 extends Problem {
         String expected = "PINALSIGYAHRPI";
         String output = convert(input, numRows); // Calls your implementation
 
-        validate(expected, output);
+        validator(expected, output);
     }
 
     private String convert(String s, int numRows) {
@@ -38,14 +40,4 @@ public class Problem6 extends Problem {
         return result.toString();
     }
 
-    private void validate(Object object1, Object object2) {
-        System.out.println(object1);
-        System.out.println(object2);
-
-        if (Objects.equals(object1, object2)) {
-            System.out.println("Başarılı");
-        } else {
-            System.out.println("Başarısız");
-        }
-    }
 }
