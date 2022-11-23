@@ -1,17 +1,18 @@
 package org.example.Problem204;
 
-import org.example.IDrivable;
+import org.example.IResolvable;
 import org.example.Problem;
 
-public class Problem204 extends Problem implements IDrivable {
+public class Problem204 extends Problem implements IResolvable {
 
     public Problem204() {
-        this.setName("204. Count Primes");
-        this.setUrl("https://leetcode.com/problems/count-primes/");
+        System.out.println("204. Count Primes");
+        System.out.println("https://leetcode.com/problems/count-primes/");
+        this.lineBreak();
     }
 
     @Override
-    public void driver (){
+    public void resolve(){
         int n = 100000000;
         System.out.println("Count Primes for n=" + n + " " + countPrimes(n));
     }
@@ -39,7 +40,7 @@ public class Problem204 extends Problem implements IDrivable {
             }
         }
 
-        // Print all prime numbers
+        // Calculate all prime numbers
         for (int i = 2; i < n; i++) {
             if (prime[i] == true)
                 j++;

@@ -1,17 +1,18 @@
 package org.example.Problem6;
 
-import org.example.IDrivable;
+import org.example.IResolvable;
 import org.example.Problem;
 
-public class Problem6 extends Problem implements IDrivable {
+public class Problem6 extends Problem implements IResolvable {
 
     public Problem6() {
-        this.setName("6. Zigzag Conversation");
-        this.setUrl("https://leetcode.com/problems/zigzag-conversion/");
+        System.out.println("6. Zigzag Conversation");
+        System.out.println("https://leetcode.com/problems/zigzag-conversion/");
+        this.lineBreak();
     }
 
     @Override
-    public void driver() {
+    public void resolve() {
 
         String input = "PAYPALISHIRING";
         int numRows = 4;

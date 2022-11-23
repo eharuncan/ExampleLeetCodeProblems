@@ -1,17 +1,18 @@
 package org.example.Problem134;
 
-import org.example.IDrivable;
+import org.example.IResolvable;
 import org.example.Problem;
 
-public class Problem134 extends Problem implements IDrivable {
+public class Problem134 extends Problem implements IResolvable {
 
     public Problem134() {
-        this.setName("134. Gas Station");
-        this.setUrl("https://leetcode.com/problems/gas-station/");
+        System.out.println("134. Gas Station");
+        System.out.println("https://leetcode.com/problems/gas-station/");
+        this.lineBreak();
     }
 
     @Override
-    public void driver() {
+    public void resolve() {
 
     }
 

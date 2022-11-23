@@ -1,22 +1,23 @@
 package org.example.Problem80;
 
-import org.example.IDrivable;
+import org.example.IResolvable;
 import org.example.Problem;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Problem80 extends Problem implements IDrivable {
+public class Problem80 extends Problem implements IResolvable {
 
     public Problem80() {
-        this.setName("80. Remove Duplicates from Sorted Array II");
-        this.setUrl("https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/");
+        System.out.println("80. Remove Duplicates from Sorted Array II");
+        System.out.println("https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/");
+        this.lineBreak();
     }
 
     int[] nums = {1, 1, 1, 2, 2, 3};
 
     @Override
-    public void driver() {
+    public void resolve() {
 
         int[] expectedNums = {1, 1, 2, 2, 3};
 

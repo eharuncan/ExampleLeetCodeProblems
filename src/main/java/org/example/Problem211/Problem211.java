@@ -1,17 +1,18 @@
 package org.example.Problem211;
 
-import org.example.IDrivable;
+import org.example.IResolvable;
 import org.example.Problem;
 
-public class Problem211 extends Problem implements IDrivable {
+public class Problem211 extends Problem implements IResolvable {
 
     public Problem211() {
-        this.setName("211. Design Add and Search Words Data Structure");
-        this.setUrl("https://leetcode.com/problems/design-add-and-search-words-data-structure/");
+        System.out.println("211. Design Add and Search Words Data Structure");
+        System.out.println("https://leetcode.com/problems/design-add-and-search-words-data-structure/");
+        this.lineBreak();
     }
 
     @Override
-    public void driver (){
+    public void resolve(){
         String word = "test";
         WordDictionary obj = new WordDictionary();
         obj.addWord(word);

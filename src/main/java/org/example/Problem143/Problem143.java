@@ -1,17 +1,18 @@
 package org.example.Problem143;
 
-import org.example.IDrivable;
+import org.example.IResolvable;
 import org.example.Problem;
 
-public class Problem143 extends Problem implements IDrivable {
+public class Problem143 extends Problem implements IResolvable {
 
     public Problem143() {
-        this.setName("143. Reorder List");
-        this.setUrl("https://leetcode.com/problems/reorder-list/");
+        System.out.println("143. Reorder List");
+        System.out.println("https://leetcode.com/problems/reorder-list/");
+        this.lineBreak();
     }
 
     @Override
-    public void driver() {
+    public void resolve() {
 
         int[] input = {1,2,3,4};
         int[] expected = {1,4,2,3};
@@ -20,7 +21,6 @@ public class Problem143 extends Problem implements IDrivable {
 
         validator(expected, output);
     }
-
 
     public int[] reorderList (int[] input ) {
         return input;
