@@ -8,6 +8,7 @@ public class Problem {
     private String url;
 
     public Problem() {
+        System.out.println();
     }
 
     public String getName() {
