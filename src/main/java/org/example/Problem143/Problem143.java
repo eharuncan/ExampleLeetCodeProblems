@@ -3,6 +3,8 @@ package org.example.Problem143;
 import org.example.IResolvable;
 import org.example.Problem;
 
+import java.sql.Array;
+
 public class Problem143 extends Problem implements IResolvable {
 
     public Problem143() {
@@ -12,14 +14,11 @@ public class Problem143 extends Problem implements IResolvable {
     }
 
     @Override
-    public void resolve() {
+    public Object resolve(Object inputObject1, Object inputObject2) {
 
-        int[] input = {1,2,3,4};
-        int[] expected = {1,4,2,3};
+        int[] input = (int[])inputObject1;
 
-        int[] output = reorderList(input);
-
-        validator(expected, output);
+        return reorderList(input);
     }
 
     public int[] reorderList (int[] input ) {

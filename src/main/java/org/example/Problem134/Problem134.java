@@ -11,9 +11,9 @@ public class Problem134 extends Problem implements IResolvable {
         this.lineBreak();
     }
 
+
     @Override
-    public void resolve() {
-
+    public Object resolve(Object inputObject1, Object inputObject2) {
+        return null;
     }
-
 }

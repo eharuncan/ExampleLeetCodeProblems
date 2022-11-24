@@ -12,14 +12,12 @@ public class Problem6 extends Problem implements IResolvable {
     }
 
     @Override
-    public void resolve() {
+    public Object resolve(Object inputObject1, Object inputObject2) {
 
-        String input = "PAYPALISHIRING";
-        int numRows = 4;
-        String expected = "PINALSIGYAHRPI";
-        String output = convert(input, numRows); // Calls your implementation
+        String input = inputObject1.toString();
+        int numRows = (Integer) inputObject2;
 
-        validator(expected, output);
+        return convert(input, numRows);
     }
 
     private String convert(String s, int numRows) {

@@ -1,5 +1,5 @@
 package org.example;
 
 public interface IResolvable {
-    void resolve();
+    Object resolve(Object inputObject1, Object inputObject2);
 }

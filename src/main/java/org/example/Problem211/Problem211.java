@@ -12,12 +12,13 @@ public class Problem211 extends Problem implements IResolvable {
     }
 
     @Override
-    public void resolve(){
+    public Object resolve(Object inputObject1, Object inputObject2) {
         String word = "test";
         WordDictionary obj = new WordDictionary();
         obj.addWord(word);
         boolean param_2 = obj.search(word);
         System.out.println(param_2);
+        return null;
     }
 
 }

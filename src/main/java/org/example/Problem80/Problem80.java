@@ -14,22 +14,22 @@ public class Problem80 extends Problem implements IResolvable {
         this.lineBreak();
     }
 
-    int[] nums = {1, 1, 1, 2, 2, 3};
+
 
     @Override
-    public void resolve() {
+    public Object resolve(Object inputObject1, Object inputObject2) {
 
-        int[] expectedNums = {1, 1, 2, 2, 3};
+        int [] inputList = (int[])inputObject1;
 
-        int k = removeDuplicates(nums); // Calls your implementation
+        int k = removeDuplicates(inputList);
 
         ArrayList<Integer> resultList = new ArrayList<>();
 
         for (int i = 0; i < k; i++) {
-            resultList.add(nums[i]);
+            resultList.add(inputList[i]);
         }
 
-        validator(resultList.toString(), Arrays.toString(expectedNums));
+        return resultList;
     }
 
     private int removeDuplicates(int[] nums) {
