@@ -14,7 +14,8 @@ public class Problem204 extends Problem implements IResolvable {
     @Override
     public void resolve(){
         int n = 100000000;
-        System.out.println("Count Primes for n=" + n + " " + countPrimes(n));
+        System.out.println("Count Primes for n=" + n + " = " + countPrimes(n));
+        validator(countPrimes(n), 5761455);
     }
 
     public int countPrimes(int n) {
