@@ -6,31 +6,39 @@ import org.example.Problem6.Problem6;
 import org.example.Problem80.Problem80;
 
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 public class Main {
 
     public static void main(String[] args) {
+        showResults();
+    }
+
+    public static void showResults(){
+        Date startDate = new Date();
+        resolveProblem();
+        Date endDate = new Date();
+        System.out.println("Toplam geçen süre: " + getDateDiff(startDate, endDate, TimeUnit.MILLISECONDS) + " milisaniye");
+    }
+
+    public static long getDateDiff(Date date1, Date date2, TimeUnit timeUnit) {
+        long diffInMillies = date2.getTime() - date1.getTime();
+        return timeUnit.convert(diffInMillies,TimeUnit.MILLISECONDS);
+    }
+
+    public static void resolveProblem(){
 //        Problem6 problem = new Problem6();
-//        problem.validate("PINALSIGYAHRPI", problem.resolve("PAYPALISHIRING", 4));
+//        problem.resolveAndShowResults("PAYPALISHIRING", 4, "PINALSIGYAHRPI");
 
 //        Problem80 problem = new Problem80();
-//        ArrayList<Integer> expectedNums = new ArrayList<>();
-//        expectedNums.add(1);
-//        expectedNums.add(1);
-//        expectedNums.add(2);
-//        expectedNums.add(2);
-//        expectedNums.add(3);
-//        int[] input = {1, 1, 1, 2, 2, 3};
-//        problem.validate(expectedNums, problem.resolve(input, null));
+//        problem.resolveAndShowResults(new int[]{1, 1, 1, 2, 2, 3}, new int[]{1, 1, 2, 2, 3});
 
 //        Problem143 problem = new Problem143();
-//        int[] input = {1,2,3,4};
-//        int[] expected = {1,4,2,3};
-//        problem.validate(expected, problem.resolve(input, null));
+//        problem.resolveAndShowResults(new int[]{1, 2, 3, 4}, new int[]{1, 4, 2, 3});
 
         Problem204 problem = new Problem204();
-        int n = 100000000;
-        problem.validate(5761455, problem.resolve(n, null));
+        problem.resolveAndShowResults(100000000, 5761455);
     }
 
 }

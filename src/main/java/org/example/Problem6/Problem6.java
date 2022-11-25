@@ -3,12 +3,18 @@ package org.example.Problem6;
 import org.example.IResolvable;
 import org.example.Problem;
 
+import java.util.Arrays;
+
 public class Problem6 extends Problem implements IResolvable {
 
     public Problem6() {
         System.out.println("6. Zigzag Conversation");
         System.out.println("https://leetcode.com/problems/zigzag-conversion/");
-        this.lineBreak();
+        lineBreak();
+    }
+
+    public void resolveAndShowResults(Object inputObject1, Object inputObject2,  Object expectedObject){
+        validate(expectedObject, resolve(inputObject1, inputObject2));
     }
 
     @Override
@@ -18,6 +24,11 @@ public class Problem6 extends Problem implements IResolvable {
         int numRows = (Integer) inputObject2;
 
         return convert(input, numRows);
+    }
+
+    @Override
+    public Object resolve(Object inputObject) {
+        return null;
     }
 
     private String convert(String s, int numRows) {

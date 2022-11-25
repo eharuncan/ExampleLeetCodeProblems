@@ -8,12 +8,21 @@ public class Problem204 extends Problem implements IResolvable {
     public Problem204() {
         System.out.println("204. Count Primes");
         System.out.println("https://leetcode.com/problems/count-primes/");
-        this.lineBreak();
+        lineBreak();
+    }
+
+    public void resolveAndShowResults(Object inputObject, Object expectedObject){
+        validate(expectedObject, resolve(inputObject));
     }
 
     @Override
-    public Object resolve(Object inputObject1, Object inputObject2) {
-        int n = (int)inputObject1;
+    public Object resolve(Object inputObject, Object expectedObject) {
+        return null;
+    }
+
+    @Override
+    public Object resolve(Object inputObject) {
+        int n = (int)inputObject;
         return countPrimes(n);
     }
 

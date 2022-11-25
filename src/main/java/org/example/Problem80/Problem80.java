@@ -11,15 +11,21 @@ public class Problem80 extends Problem implements IResolvable {
     public Problem80() {
         System.out.println("80. Remove Duplicates from Sorted Array II");
         System.out.println("https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/");
-        this.lineBreak();
+        lineBreak();
     }
 
-
+    public void resolveAndShowResults(Object inputObject, Object expectedObject){
+        validate(Arrays.toString((int[]) expectedObject), Arrays.toString((int[]) resolve(inputObject)));
+    }
 
     @Override
     public Object resolve(Object inputObject1, Object inputObject2) {
+        return null;
+    }
 
-        int [] inputList = (int[])inputObject1;
+    @Override
+    public Object resolve(Object inputObject) {
+        int [] inputList = (int[])inputObject;
 
         int k = removeDuplicates(inputList);
 

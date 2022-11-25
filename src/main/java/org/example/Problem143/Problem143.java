@@ -10,14 +10,21 @@ public class Problem143 extends Problem implements IResolvable {
     public Problem143() {
         System.out.println("143. Reorder List");
         System.out.println("https://leetcode.com/problems/reorder-list/");
-        this.lineBreak();
+        lineBreak();
+    }
+
+    public void resolveAndShowResults(Object inputObject, Object expectedObject){
+        validate(expectedObject, resolve(inputObject));
     }
 
     @Override
     public Object resolve(Object inputObject1, Object inputObject2) {
+        return null;
+    }
 
-        int[] input = (int[])inputObject1;
-
+    @Override
+    public Object resolve(Object inputObject) {
+        int[] input = (int[])inputObject;
         return reorderList(input);
     }
 
