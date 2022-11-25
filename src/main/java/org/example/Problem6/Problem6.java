@@ -1,9 +1,9 @@
 package org.example.Problem6;
 
-import org.example.IResolvable;
+import org.example.IResolvable2Input;
 import org.example.Problem;
 
-public class Problem6 extends Problem implements IResolvable {
+public class Problem6 extends Problem implements IResolvable2Input {
 
     public Problem6() {
         System.out.println("6. Zigzag Conversation");
@@ -22,11 +22,6 @@ public class Problem6 extends Problem implements IResolvable {
         int numRows = (Integer) inputObject2;
 
         return convert(input, numRows);
-    }
-
-    @Override
-    public Object resolve(Object inputObject) {
-        return null;
     }
 
     private String convert(String s, int numRows) {

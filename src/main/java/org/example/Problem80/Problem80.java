@@ -1,12 +1,12 @@
 package org.example.Problem80;
 
-import org.example.IResolvable;
+import org.example.IResolvable1Input;
 import org.example.Problem;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Problem80 extends Problem implements IResolvable {
+public class Problem80 extends Problem implements IResolvable1Input {
 
     public Problem80() {
         System.out.println("80. Remove Duplicates from Sorted Array II");
@@ -16,11 +16,6 @@ public class Problem80 extends Problem implements IResolvable {
 
     public void resolveAndShowResults(Object inputObject, Object expectedObject){
         validate(Arrays.toString((int[]) expectedObject), Arrays.toString((int[]) resolve(inputObject)));
-    }
-
-    @Override
-    public Object resolve(Object inputObject1, Object inputObject2) {
-        return null;
     }
 
     @Override

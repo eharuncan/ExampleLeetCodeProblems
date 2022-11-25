@@ -1,9 +1,9 @@
 package org.example.Problem204;
 
-import org.example.IResolvable;
+import org.example.IResolvable1Input;
 import org.example.Problem;
 
-public class Problem204 extends Problem implements IResolvable {
+public class Problem204 extends Problem implements IResolvable1Input {
 
     public Problem204() {
         System.out.println("204. Count Primes");
@@ -13,11 +13,6 @@ public class Problem204 extends Problem implements IResolvable {
 
     public void resolveAndShowResults(Object inputObject, Object expectedObject){
         validate(expectedObject, resolve(inputObject));
-    }
-
-    @Override
-    public Object resolve(Object inputObject, Object expectedObject) {
-        return null;
     }
 
     @Override

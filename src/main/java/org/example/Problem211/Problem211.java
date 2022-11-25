@@ -1,9 +1,9 @@
 package org.example.Problem211;
 
-import org.example.IResolvable;
+import org.example.IResolvable1Input;
 import org.example.Problem;
 
-public class Problem211 extends Problem implements IResolvable {
+public class Problem211 extends Problem implements IResolvable1Input {
 
     public Problem211() {
         System.out.println("211. Design Add and Search Words Data Structure");
@@ -13,11 +13,6 @@ public class Problem211 extends Problem implements IResolvable {
 
     public void resolveAndShowResults(Object inputObject, Object expectedObject){
         validate(expectedObject, resolve(inputObject));
-    }
-
-    @Override
-    public Object resolve(Object inputObject1, Object inputObject2) {
-        return null;
     }
 
     @Override

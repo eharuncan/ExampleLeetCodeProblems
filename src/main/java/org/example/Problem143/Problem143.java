@@ -1,9 +1,9 @@
 package org.example.Problem143;
 
-import org.example.IResolvable;
+import org.example.IResolvable1Input;
 import org.example.Problem;
 
-public class Problem143 extends Problem implements IResolvable {
+public class Problem143 extends Problem implements IResolvable1Input {
 
     public Problem143() {
         System.out.println("143. Reorder List");
@@ -13,11 +13,6 @@ public class Problem143 extends Problem implements IResolvable {
 
     public void resolveAndShowResults(Object inputObject, Object expectedObject){
         validate(expectedObject, resolve(inputObject));
-    }
-
-    @Override
-    public Object resolve(Object inputObject1, Object inputObject2) {
-        return null;
     }
 
     @Override
