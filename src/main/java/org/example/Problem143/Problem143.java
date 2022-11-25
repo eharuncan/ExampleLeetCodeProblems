@@ -3,8 +3,6 @@ package org.example.Problem143;
 import org.example.IResolvable;
 import org.example.Problem;
 
-import java.sql.Array;
-
 public class Problem143 extends Problem implements IResolvable {
 
     public Problem143() {

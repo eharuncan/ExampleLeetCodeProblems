@@ -5,7 +5,6 @@ import org.example.Problem204.Problem204;
 import org.example.Problem6.Problem6;
 import org.example.Problem80.Problem80;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
@@ -19,7 +18,10 @@ public class Main {
         Date startDate = new Date();
         resolveProblem();
         Date endDate = new Date();
-        System.out.println("Toplam geçen süre: " + getDateDiff(startDate, endDate, TimeUnit.MILLISECONDS) + " milisaniye");
+        System.out.println(
+                "Toplam geçen süre: " +
+                        getDateDiff(startDate, endDate, TimeUnit.MILLISECONDS) +
+                        " milisaniye");
     }
 
     public static long getDateDiff(Date date1, Date date2, TimeUnit timeUnit) {
