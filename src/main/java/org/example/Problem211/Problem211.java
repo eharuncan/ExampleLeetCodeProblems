@@ -13,7 +13,6 @@ public class Problem211 extends Problem implements IResolvable {
 
     @Override
     public void resolve() {
-
         WordDictionary wordDictionary = new WordDictionary();
         wordDictionary.addWord("bad");
         wordDictionary.addWord("dad");

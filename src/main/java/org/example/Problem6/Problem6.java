@@ -13,13 +13,9 @@ public class Problem6 extends Problem implements IResolvable {
 
     @Override
     public void resolve() {
-
-
         String input = "PINALSIGYAHRPI";
         int numRows = 4;
-
         validate("PAYPALISHIRING", convert(input, numRows));
-
     }
 
     private String convert(String s, int numRows) {
