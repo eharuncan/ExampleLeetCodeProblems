@@ -2,6 +2,8 @@ package org.example;
 
 import org.example.Problem143.Problem143;
 import org.example.Problem204.Problem204;
+import org.example.Problem211.Problem211;
+import org.example.Problem211.WordDictionary;
 import org.example.Problem6.Problem6;
 import org.example.Problem80.Problem80;
 
@@ -19,7 +21,7 @@ public class Main {
         resolveProblem();
         Date endDate = new Date();
         System.out.println(
-                "Toplam geçen süre: " +
+                "\nToplam geçen süre: " +
                         getDateDiff(startDate, endDate, TimeUnit.MILLISECONDS) +
                         " milisaniye");
     }
@@ -31,18 +33,12 @@ public class Main {
 
     public static void resolveProblem(){
 //        Problem6 problem = new Problem6();
-//        problem.resolveAndShowResults("PAYPALISHIRING", 4, "PINALSIGYAHRPI");
-
 //        Problem80 problem = new Problem80();
-//        problem.resolveAndShowResults(new int[]{1, 1, 1, 2, 2, 3}, new int[]{1, 1, 2, 2, 3});
-
 //        Problem143 problem = new Problem143();
-//        problem.resolveAndShowResults(new int[]{1, 2, 3, 4}, new int[]{1, 4, 2, 3});
-
-        Problem204 problem = new Problem204();
-        problem.resolveAndShowResults(100000000, 5761455);
+//        Problem204 problem = new Problem204();
+        Problem211 problem = new Problem211();
+        problem.resolve();
     }
-
 }
 
 

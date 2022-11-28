@@ -1,9 +1,9 @@
 package org.example.Problem6;
 
-import org.example.IResolvable2Input;
+import org.example.IResolvable;
 import org.example.Problem;
 
-public class Problem6 extends Problem implements IResolvable2Input {
+public class Problem6 extends Problem implements IResolvable {
 
     public Problem6() {
         System.out.println("6. Zigzag Conversation");
@@ -11,17 +11,15 @@ public class Problem6 extends Problem implements IResolvable2Input {
         lineBreak();
     }
 
-    public void resolveAndShowResults(Object inputObject1, Object inputObject2,  Object expectedObject){
-        validate(expectedObject, resolve(inputObject1, inputObject2));
-    }
-
     @Override
-    public Object resolve(Object inputObject1, Object inputObject2) {
+    public void resolve() {
 
-        String input = inputObject1.toString();
-        int numRows = (Integer) inputObject2;
 
-        return convert(input, numRows);
+        String input = "PINALSIGYAHRPI";
+        int numRows = 4;
+
+        validate("PAYPALISHIRING", convert(input, numRows));
+
     }
 
     private String convert(String s, int numRows) {

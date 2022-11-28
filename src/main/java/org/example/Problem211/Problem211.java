@@ -1,9 +1,9 @@
 package org.example.Problem211;
 
-import org.example.IResolvable1Input;
+import org.example.IResolvable;
 import org.example.Problem;
 
-public class Problem211 extends Problem implements IResolvable1Input {
+public class Problem211 extends Problem implements IResolvable {
 
     public Problem211() {
         System.out.println("211. Design Add and Search Words Data Structure");
@@ -11,16 +11,17 @@ public class Problem211 extends Problem implements IResolvable1Input {
         lineBreak();
     }
 
-    public void resolveAndShowResults(Object inputObject, Object expectedObject){
-        validate(expectedObject, resolve(inputObject));
-    }
-
     @Override
-    public Object resolve(Object inputObject) {
-        String word = "test";
-        WordDictionary obj = new WordDictionary();
-        obj.addWord(word);
-        return obj.search(word);
+    public void resolve() {
+
+        WordDictionary wordDictionary = new WordDictionary();
+        wordDictionary.addWord("bad");
+        wordDictionary.addWord("dad");
+        wordDictionary.addWord("mad");
+        System.out.println(wordDictionary.search("pad"));
+        System.out.println(wordDictionary.search("bad")); // return True
+        System.out.println(wordDictionary.search(".ad")); // return True
+        System.out.println(wordDictionary.search("b..")); // return True
     }
 
 }

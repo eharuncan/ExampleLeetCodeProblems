@@ -1,12 +1,12 @@
 package org.example.Problem80;
 
-import org.example.IResolvable1Input;
+import org.example.IResolvable;
 import org.example.Problem;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Problem80 extends Problem implements IResolvable1Input {
+public class Problem80 extends Problem implements IResolvable {
 
     public Problem80() {
         System.out.println("80. Remove Duplicates from Sorted Array II");
@@ -14,13 +14,9 @@ public class Problem80 extends Problem implements IResolvable1Input {
         lineBreak();
     }
 
-    public void resolveAndShowResults(Object inputObject, Object expectedObject){
-        validate(Arrays.toString((int[]) expectedObject), Arrays.toString((int[]) resolve(inputObject)));
-    }
-
     @Override
-    public Object resolve(Object inputObject) {
-        int [] inputList = (int[])inputObject;
+    public void resolve() {
+        int [] inputList = {1, 1, 1, 2, 2, 3};
 
         int k = removeDuplicates(inputList);
 
@@ -30,7 +26,7 @@ public class Problem80 extends Problem implements IResolvable1Input {
             resultList.add(inputList[i]);
         }
 
-        return resultList;
+        validate(Arrays.toString((int[]) new int[]{1, 1, 2, 2, 3}), Arrays.toString(new ArrayList[]{resultList})); ;
     }
 
     private int removeDuplicates(int[] nums) {
