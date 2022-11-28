@@ -20,13 +20,13 @@ public class Problem80 extends Problem implements IResolvable {
 
         int k = removeDuplicates(inputList);
 
-        ArrayList<Integer> resultList = new ArrayList<>();
+        int [] resultList = new int[k];
 
         for (int i = 0; i < k; i++) {
-            resultList.add(inputList[i]);
+            resultList[i] = inputList[i];
         }
 
-        validate(Arrays.toString((int[]) new int[]{1, 1, 2, 2, 3}), Arrays.toString(new ArrayList[]{resultList})); ;
+        validate(Arrays.toString(new int[]{1, 1, 2, 2, 3}), Arrays.toString(resultList));
     }
 
     private int removeDuplicates(int[] nums) {

@@ -34,7 +34,6 @@ public class Main {
     public static void resolveProblem(){
 //        Problem6 problem = new Problem6();
 //        Problem80 problem = new Problem80();
-//        Problem143 problem = new Problem143();
 //        Problem204 problem = new Problem204();
         Problem211 problem = new Problem211();
         problem.resolve();

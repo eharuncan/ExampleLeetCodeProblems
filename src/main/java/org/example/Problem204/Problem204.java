@@ -3,6 +3,8 @@ package org.example.Problem204;
 import org.example.IResolvable;
 import org.example.Problem;
 
+import static org.example.Utils.Utils.SCREEN_SCANNER;
+
 public class Problem204 extends Problem implements IResolvable {
 
     public Problem204() {
@@ -13,8 +15,9 @@ public class Problem204 extends Problem implements IResolvable {
 
     @Override
     public void resolve() {
-        int n = 5761455;
-        validate(100000000, countPrimes(n)); ;
+        System.out.print("Lütfen bir n değeri giriniz: ");
+        int n = Integer.parseInt(SCREEN_SCANNER.nextLine());
+        System.out.println(countPrimes(n));
     }
 
     public int countPrimes(int n) {

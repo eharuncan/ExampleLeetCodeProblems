@@ -13,9 +13,9 @@ public class Problem {
             System.out.println("Doğrulama başarılı");
         } else {
             System.out.println("Doğrulama başarısız");
-            System.out.println(expectedObject.toString());
-            System.out.println(resultObject.toString());
         }
+        System.out.println(expectedObject.toString());
+        System.out.println(resultObject.toString());
     }
 
     protected void lineBreak() {
