@@ -16,7 +16,7 @@ public class Problem80 extends Problem implements IResolvable {
 
     @Override
     public void resolve() {
-        int [] inputList = {1, 1, 1, 2, 2, 3};
+        int [] inputList = {1, 1, 1, 2, 2, 2, 2, 3};
 
         int k = removeDuplicates(inputList);
 
