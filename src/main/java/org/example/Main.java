@@ -1,11 +1,11 @@
 package org.example;
 
+import org.example.Problem6.Problem6;
+import org.example.Problem80.Problem80;
+import org.example.Problem134.Problem134;
 import org.example.Problem143.Problem143;
 import org.example.Problem204.Problem204;
 import org.example.Problem211.Problem211;
-import org.example.Problem211.WordDictionary;
-import org.example.Problem6.Problem6;
-import org.example.Problem80.Problem80;
 
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
@@ -34,8 +34,10 @@ public class Main {
     public static void resolveProblem(){
 //        Problem6 problem = new Problem6();
 //        Problem80 problem = new Problem80();
+//        Problem134 problem = new Problem134();
+        Problem143 problem = new Problem143();
 //        Problem204 problem = new Problem204();
-        Problem211 problem = new Problem211();
+//        Problem211 problem = new Problem211();
         problem.resolve();
     }
 }
