@@ -1,4 +1,6 @@
 # resolve-leetcode-problems
-A Console App for resolving Leet Code Problems
+A Console App 
+
+uses to resolve Leet Code Problems
 
 which uses Maven and JDK11
