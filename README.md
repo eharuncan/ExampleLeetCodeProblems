@@ -1,4 +1,4 @@
-# resolve-leetcode-problems
+# resolve-leetcode-problems-desktop-app
 A Console App 
 
 uses to resolve Leet Code Problems
